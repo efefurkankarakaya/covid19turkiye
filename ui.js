@@ -156,7 +156,6 @@ class UI{
     create_footer(){
         document.getElementById("footer").innerHTML = `
             <style>
-                /* Popup container - can be anything you want */
                 .popup {
                 position: relative;
                 cursor: pointer;
@@ -166,7 +165,6 @@ class UI{
                 user-select: none;
                 }
 
-                /* The actual popup */
                 .popup .popuptext {
                 visibility: hidden;
                 width: 160px;
@@ -182,7 +180,6 @@ class UI{
                 margin-left: -80px;
                 }
 
-                /* Popup arrow */
                 .popup .popuptext::after {
                 content: "";
                 position: absolute;
@@ -194,14 +191,12 @@ class UI{
                 border-color: #555 transparent transparent transparent;
                 }
 
-                /* Toggle this class - hide and show the popup */
                 .popup .show {
                 visibility: visible;
                 -webkit-animation: fadeIn 1s;
                 animation: fadeIn 1s;
                 }
 
-                /* Add animation (fade in the popup) */
                 @-webkit-keyframes fadeIn {
                 from {opacity: 0;} 
                 to {opacity: 1;}
@@ -223,7 +218,7 @@ class UI{
     }
 
     pop_up() {
-        var popup = document.getElementById("private-policy-popup");
+        const popup = document.getElementById("private-policy-popup");
         popup.classList.toggle("show");
     }
 
