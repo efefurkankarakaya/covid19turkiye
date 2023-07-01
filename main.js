@@ -13,9 +13,11 @@ const total_cases_button = document.getElementById("total-cases-button");
 const total_deaths_button = document.getElementById("total-deaths-button");
 const total_recovered_button = document.getElementById("total-recovered-button");
 
-const historical_data = new Data("https://corona.lmao.ninja/v2/historical/turkey");
+// const historical_data = new Data("https://corona.lmao.ninja/v2/historical/turkey");
+const historical_data = new Data("./data/turkiye_historical_v2.json");
 
-const data = new Data("https://corona.lmao.ninja/v2/countries/turkey");
+// const data = new Data("https://corona.lmao.ninja/v2/countries/turkey");
+const data = new Data("./data/turkiye_all_v2.json");
 
 document.addEventListener("DOMContentLoaded", load_page);
 home_button.addEventListener("click", load_page)
